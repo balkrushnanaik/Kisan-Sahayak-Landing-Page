@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>About Kisan Sahayak</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-secondary-fixed-variant": "#364c3e",
+                    "on-error": "#ffffff",
+                    "error": "#ba1a1a",
+                    "on-tertiary": "#ffffff",
+                    "inverse-surface": "#293040",
+                    "inverse-primary": "#9cd4a1",
+                    "surface-container-low": "#f1f3ff",
+                    "tertiary-fixed-dim": "#ffb95f",
+                    "on-tertiary-container": "#ffc47d",
+                    "on-primary-fixed-variant": "#1d512a",
+                    "surface-container-high": "#e1e8fd",
+                    "error-container": "#ffdad6",
+                    "secondary-fixed-dim": "#b4ccbb",
+                    "primary": "#174b25",
+                    "secondary-fixed": "#d0e9d6",
+                    "tertiary": "#5d3900",
+                    "tertiary-container": "#7d4e00",
+                    "on-surface": "#141b2b",
+                    "on-tertiary-fixed-variant": "#653e00",
+                    "on-secondary-container": "#53695b",
+                    "surface-container-lowest": "#ffffff",
+                    "on-secondary-fixed": "#0b1f14",
+                    "on-primary": "#ffffff",
+                    "on-primary-container": "#a5dda9",
+                    "surface-container": "#e9edff",
+                    "on-tertiary-fixed": "#2a1700",
+                    "outline-variant": "#c1c9be",
+                    "surface": "#f9f9ff",
+                    "secondary-container": "#d0e9d6",
+                    "primary-fixed": "#b8f0bb",
+                    "on-secondary": "#ffffff",
+                    "surface-variant": "#dce2f7",
+                    "primary-container": "#30633a",
+                    "surface-bright": "#f9f9ff",
+                    "surface-container-highest": "#dce2f7",
+                    "surface-tint": "#36693f",
+                    "primary-fixed-dim": "#9cd4a1",
+                    "outline": "#717970",
+                    "on-background": "#141b2b",
+                    "on-primary-fixed": "#002109",
+                    "tertiary-fixed": "#ffddb8",
+                    "background": "#f9f9ff",
+                    "inverse-on-surface": "#edf0ff",
+                    "surface-dim": "#d3daef",
+                    "on-surface-variant": "#414940",
+                    "on-error-container": "#93000a",
+                    "secondary": "#4d6355"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "container-max": "1280px",
+                    "xs": "8px",
+                    "sm": "16px",
+                    "base": "4px",
+                    "gutter": "24px",
+                    "xl": "48px",
+                    "margin-mobile": "16px",
+                    "lg": "32px",
+                    "md": "24px"
+            },
+            "fontFamily": {
+                    "headline-md": ["Inter"],
+                    "title-lg": ["Inter"],
+                    "label-md": ["Inter"],
+                    "headline-lg-mobile": ["Inter"],
+                    "label-sm": ["Inter"],
+                    "headline-lg": ["Inter"],
+                    "display-lg": ["Inter"],
+                    "body-md": ["Inter"],
+                    "body-lg": ["Inter"]
+            },
+            "fontSize": {
+                    "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                    "title-lg": ["20px", {"lineHeight": "28px", "fontWeight": "600"}],
+                    "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "500"}],
+                    "headline-lg-mobile": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                    "label-sm": ["12px", {"lineHeight": "16px", "fontWeight": "500"}],
+                    "headline-lg": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                    "display-lg": ["48px", {"lineHeight": "60px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}]
+            }
+          }
+        }
+      }
+    </script>
+</head>
+<body class="bg-background text-on-background font-body-md antialiased min-h-screen flex flex-col">
+<!-- TopNavBar -->
+<nav aria-label="Main Navigation" class="bg-surface dark:bg-surface border-b border-outline-variant shadow-sm docked full-width top-0 sticky z-50 transition-all duration-200">
+<div class="flex justify-between items-center w-full px-md md:px-lg max-w-container-max mx-auto h-16">
+<!-- Brand -->
+<div class="flex items-center gap-sm">
+<span aria-hidden="true" class="material-symbols-outlined text-primary-container text-[28px]" data-icon="eco">eco</span>
+<span class="text-title-lg font-title-lg text-primary dark:text-inverse-primary font-bold tracking-tight">Kisan Sahayak</span>
+</div>
+<!-- Nav Links (Desktop) -->
+<div class="hidden md:flex items-center gap-gutter">
+<a class="text-on-surface-variant hover:text-primary dark:hover:text-inverse-primary transition-colors font-label-md text-label-md" href="#">Find Labour</a>
+<a class="text-on-surface-variant hover:text-primary dark:hover:text-inverse-primary transition-colors font-label-md text-label-md" href="#">Machinery</a>
+<a class="text-on-surface-variant hover:text-primary dark:hover:text-inverse-primary transition-colors font-label-md text-label-md" href="#">Store</a>
+<a aria-current="page" class="text-primary dark:text-inverse-primary font-bold border-b-2 border-primary pb-1 font-label-md text-label-md opacity-80" href="#">About</a>
+</div>
+<!-- Actions -->
+<div class="flex items-center gap-sm">
+<div class="hidden md:flex gap-sm">
+<button aria-label="Search" class="text-on-surface-variant hover:text-primary transition-colors p-2 rounded-full">
+<span class="material-symbols-outlined" data-icon="search">search</span>
+</button>
+<button class="bg-surface border border-outline text-on-surface hover:bg-surface-container transition-colors font-label-md px-4 py-2 rounded-lg">Login</button>
+<button class="bg-primary-container text-on-primary font-label-md px-4 py-2 rounded-lg hover:bg-surface-tint transition-colors shadow-sm">Register</button>
+</div>
+<!-- Mobile Menu Button -->
+<button aria-label="Open Menu" class="md:hidden text-on-surface p-2">
+<span class="material-symbols-outlined" data-icon="menu">menu</span>
+</button>
+</div>
+</div>
+</nav>
+<!-- Main Content -->
+<main class="flex-grow flex flex-col w-full">
+<!-- 1. HERO -->
+<section class="relative bg-surface-container-low overflow-hidden border-b border-outline-variant">
+<div class="max-w-container-max mx-auto px-md py-xl md:py-24 grid grid-cols-1 lg:grid-cols-2 gap-xl items-center relative z-10">
+<div class="flex flex-col gap-sm">
+<h1 class="font-display-lg text-display-lg text-on-surface text-4xl md:text-5xl font-bold leading-tight">About Kisan Sahayak</h1>
+<p class="font-headline-md text-headline-md text-primary-container font-semibold mt-2">Technology that connects Farmers, Labourers and Agricultural Services.</p>
+<p class="font-body-lg text-body-lg text-on-surface-variant mt-4 max-w-xl">
+                        A dedicated digital platform designed specifically for rural communities. We simplify the process of finding reliable farm labor, accessing heavy machinery, and trading agricultural products locally, empowering the agricultural backbone of our nation.
+                    </p>
+<div class="flex flex-col sm:flex-row gap-sm mt-8">
+<button class="bg-primary-container text-on-primary font-label-md px-6 py-3 rounded-lg hover:bg-surface-tint transition-colors shadow-sm text-center">Explore Kisan Sahayak</button>
+<button class="bg-transparent text-secondary border border-outline hover:bg-surface-container transition-colors font-label-md px-6 py-3 rounded-lg text-center">Meet the Founder</button>
+</div>
+</div>
+<div class="relative h-[400px] w-full rounded-xl overflow-hidden shadow-md">
+<img class="w-full h-full object-cover" data-alt="A high-quality, professional photograph of a modern, diverse group of farmers and agricultural workers standing together confidently in a lush, green field under bright, sunny skies. The image utilizes a clean, modern corporate aesthetic with vibrant greens and earthy tones, conveying trust, progress, and community in agriculture." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDCX79UqtTikvN9Yh2BPF-_lZ8GwCUFBmkKfjAJtGL_Oy4oxq9xNOnmm5GDFhG7CpWyeW5cZL9zb8-K96u-u7k-p6ESW0jD3DLYUVtP5qNHJJEkM5eimuvoIL5hPOHq7MqgVeSwyrjSQeyfxFQuBXHMHQ1FuCMRJpiMwVqd4pFkuOCrxR-34ee8OxtACyQJzloyXbjQL_421GfWEcrBIZHE57zgtBup7ikwVfAT-1I_or4WDSNBIqVgAQ"/>
+<!-- Gradient Overlay for depth -->
+<div class="absolute inset-0 bg-gradient-to-t from-inverse-surface/40 to-transparent"></div>
+</div>
+</div>
+<!-- Decorative background elements -->
+<div class="absolute top-0 right-0 -mr-32 -mt-32 w-[500px] h-[500px] rounded-full bg-primary-fixed opacity-20 blur-3xl z-0 pointer-events-none"></div>
+<div class="absolute bottom-0 left-0 -ml-32 -mb-32 w-[400px] h-[400px] rounded-full bg-secondary-fixed opacity-30 blur-3xl z-0 pointer-events-none"></div>
+</section>
+<!-- 2. OUR MISSION -->
+<section class="py-xl bg-surface">
+<div class="max-w-container-max mx-auto px-md">
+<div class="text-center max-w-3xl mx-auto mb-xl">
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-sm">Our Mission</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant italic font-medium">
+                        "Our mission is to make essential agricultural services easier to find, easier to access, and more transparent for farmers and rural workers."
+                    </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Connect -->
+<div class="bg-surface-container-lowest p-lg rounded-xl border border-outline-variant shadow-sm hover:shadow-md transition-shadow flex flex-col items-center text-center">
+<div class="w-16 h-16 rounded-full bg-primary-fixed flex items-center justify-center mb-sm">
+<span class="material-symbols-outlined text-primary-container text-3xl" data-icon="group">group</span>
+</div>
+<h3 class="font-title-lg text-title-lg text-on-surface mb-xs">CONNECT</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Bridging the gap between farmers needing hands and labourers seeking reliable work.</p>
+</div>
+<!-- Access -->
+<div class="bg-surface-container-lowest p-lg rounded-xl border border-outline-variant shadow-sm hover:shadow-md transition-shadow flex flex-col items-center text-center">
+<div class="w-16 h-16 rounded-full bg-secondary-fixed flex items-center justify-center mb-sm">
+<span class="material-symbols-outlined text-secondary text-3xl" data-icon="agriculture">agriculture</span>
+</div>
+<h3 class="font-title-lg text-title-lg text-on-surface mb-xs">ACCESS</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Making expensive agricultural machinery available for rent to small-scale farmers.</p>
+</div>
+<!-- Market -->
+<div class="bg-surface-container-lowest p-lg rounded-xl border border-outline-variant shadow-sm hover:shadow-md transition-shadow flex flex-col items-center text-center">
+<div class="w-16 h-16 rounded-full bg-tertiary-fixed flex items-center justify-center mb-sm">
+<span class="material-symbols-outlined text-tertiary text-3xl" data-icon="storefront">storefront</span>
+</div>
+<h3 class="font-title-lg text-title-lg text-on-surface mb-xs">MARKET</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Providing a digital storefront to sell produce directly and discover local farming supplies.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- 1. Understanding the Problem -->
+<section class="py-xl bg-surface-container-lowest border-y border-outline-variant">
+<div class="max-w-container-max mx-auto px-md">
+<div class="text-center mb-xl">
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-sm">Understanding the Problem</h2>
+<p class="font-body-lg text-on-surface-variant max-w-2xl mx-auto">Traditional farming faces several logistical challenges that hold back productivity and growth.</p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-gutter">
+<div class="bg-surface p-6 rounded-xl border border-outline-variant text-center">
+<div class="text-4xl mb-4">👨‍🌾</div>
+<h3 class="font-title-lg text-on-surface mb-2">Finding Labour</h3>
+<p class="text-body-md text-on-surface-variant">Difficulty in finding reliable workers when needed most during peak seasons.</p>
+</div>
+<div class="bg-surface p-6 rounded-xl border border-outline-variant text-center">
+<div class="text-4xl mb-4">🚜</div>
+<h3 class="font-title-lg text-on-surface mb-2">Machinery Access</h3>
+<p class="text-body-md text-on-surface-variant">High costs prevent small farmers from accessing modern agricultural machinery.</p>
+</div>
+<div class="bg-surface p-6 rounded-xl border border-outline-variant text-center">
+<div class="text-4xl mb-4">🌾</div>
+<h3 class="font-title-lg text-on-surface mb-2">Selling Products</h3>
+<p class="text-body-md text-on-surface-variant">Limited reach to local markets leads to unfair prices for hard-grown produce.</p>
+</div>
+<div class="bg-surface p-6 rounded-xl border border-outline-variant text-center">
+<div class="text-4xl mb-4">🔗</div>
+<h3 class="font-title-lg text-on-surface mb-2">Scattered Services</h3>
+<p class="text-body-md text-on-surface-variant">No single platform connects all these essential agricultural services efficiently.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- 2. How Kisan Sahayak Helps -->
+<section class="py-xl bg-surface">
+<div class="max-w-container-max mx-auto px-md">
+<div class="text-center mb-xl">
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-sm">How Kisan Sahayak Helps</h2>
+<p class="font-body-lg text-on-surface-variant max-w-2xl mx-auto">A streamlined process to connect you with what you need.</p>
+</div>
+<div class="flex flex-col md:flex-row items-center justify-between gap-md relative">
+<div class="hidden md:block absolute top-1/2 left-0 w-full h-0.5 bg-outline-variant -z-10 -translate-y-1/2"></div>
+<div class="flex flex-col items-center bg-surface p-4 rounded-xl z-10 w-48 text-center">
+<div class="w-12 h-12 rounded-full bg-primary-container text-on-primary flex items-center justify-center font-bold text-xl mb-3 border-4 border-surface">1</div>
+<h4 class="font-title-lg text-on-surface">FIND</h4>
+<p class="text-label-sm text-on-surface-variant mt-1">Search for labour, machinery, or products.</p>
+</div>
+<div class="flex flex-col items-center bg-surface p-4 rounded-xl z-10 w-48 text-center">
+<div class="w-12 h-12 rounded-full bg-primary-container text-on-primary flex items-center justify-center font-bold text-xl mb-3 border-4 border-surface">2</div>
+<h4 class="font-title-lg text-on-surface">CONNECT</h4>
+<p class="text-label-sm text-on-surface-variant mt-1">Review profiles and contact directly.</p>
+</div>
+<div class="flex flex-col items-center bg-surface p-4 rounded-xl z-10 w-48 text-center">
+<div class="w-12 h-12 rounded-full bg-primary-container text-on-primary flex items-center justify-center font-bold text-xl mb-3 border-4 border-surface">3</div>
+<h4 class="font-title-lg text-on-surface">BOOK OR BUY</h4>
+<p class="text-label-sm text-on-surface-variant mt-1">Secure your service or product easily.</p>
+</div>
+<div class="flex flex-col items-center bg-surface p-4 rounded-xl z-10 w-48 text-center">
+<div class="w-12 h-12 rounded-full bg-primary-container text-on-primary flex items-center justify-center font-bold text-xl mb-3 border-4 border-surface">4</div>
+<h4 class="font-title-lg text-on-surface">MANAGE</h4>
+<p class="text-label-sm text-on-surface-variant mt-1">Track bookings and view history.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- 3. Built for Farmers -->
+<section class="py-xl bg-surface-container-low border-y border-outline-variant">
+<div class="max-w-container-max mx-auto px-md">
+<div class="text-center mb-xl">
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-sm">Built for Farmers</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
+<div class="bg-surface p-6 rounded-xl border border-outline-variant flex gap-4 items-start">
+<span class="material-symbols-outlined text-primary-container text-3xl">person_search</span>
+<div>
+<h4 class="font-title-lg text-on-surface mb-1">Find Labour</h4>
+<p class="text-body-md text-on-surface-variant">Quickly locate available workers in your area.</p>
+</div>
+</div>
+<div class="bg-surface p-6 rounded-xl border border-outline-variant flex gap-4 items-start">
+<span class="material-symbols-outlined text-primary-container text-3xl">calendar_month</span>
+<div>
+<h4 class="font-title-lg text-on-surface mb-1">Book Labour</h4>
+<p class="text-body-md text-on-surface-variant">Schedule workers for specific dates and tasks.</p>
+</div>
+</div>
+<div class="bg-surface p-6 rounded-xl border border-outline-variant flex gap-4 items-start">
+<span class="material-symbols-outlined text-primary-container text-3xl">agriculture</span>
+<div>
+<h4 class="font-title-lg text-on-surface mb-1">Rent Machinery</h4>
+<p class="text-body-md text-on-surface-variant">Access tractors and tools on demand.</p>
+</div>
+</div>
+<div class="bg-surface p-6 rounded-xl border border-outline-variant flex gap-4 items-start">
+<span class="material-symbols-outlined text-primary-container text-3xl">shopping_cart</span>
+<div>
+<h4 class="font-title-lg text-on-surface mb-1">Buy Products</h4>
+<p class="text-body-md text-on-surface-variant">Purchase seeds, fertilizers, and equipment.</p>
+</div>
+</div>
+<div class="bg-surface p-6 rounded-xl border border-outline-variant flex gap-4 items-start">
+<span class="material-symbols-outlined text-primary-container text-3xl">storefront</span>
+<div>
+<h4 class="font-title-lg text-on-surface mb-1">Sell Produce</h4>
+<p class="text-body-md text-on-surface-variant">List your harvest for local buyers.</p>
+</div>
+</div>
+<div class="bg-surface p-6 rounded-xl border border-outline-variant flex gap-4 items-start">
+<span class="material-symbols-outlined text-primary-container text-3xl">manage_history</span>
+<div>
+<h4 class="font-title-lg text-on-surface mb-1">Track Everything</h4>
+<p class="text-body-md text-on-surface-variant">Manage all your bookings in one place.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 4. More Opportunities for Labourers -->
+<section class="py-xl bg-surface">
+<div class="max-w-container-max mx-auto px-md grid grid-cols-1 lg:grid-cols-2 gap-xl items-center">
+<div class="relative h-[400px] w-full rounded-xl overflow-hidden shadow-md">
+<img alt="Labourers working in field" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAdjUS53IklCcflBrIK3xeySTir9q9opu4ds6LmqENx2TTghzWqMmiA4U0n5TQ8teE25eTzV8M3TJIXnEc4udl1P_j0QGDDL5PpXSoa0GNpWGBWR3RUvLX7Pucr1B_3mNl0fupoue4fmpvjVUxxQ4bAwBmRkWxbzDCwzvqse0joOuI2bJYao9oZCXPLr9SVU7PNtSjo2L_SyWigHfcVi-MeyHb0iSGOPHyJGR3o4knTTVD05aojSqZV6Q"/>
+</div>
+<div class="flex flex-col gap-sm">
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-4">More Opportunities for Labourers</h2>
+<ul class="flex flex-col gap-4">
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary-container">check_circle</span>
+<span class="text-body-lg text-on-surface-variant">Create a professional profile to highlight skills.</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary-container">check_circle</span>
+<span class="text-body-lg text-on-surface-variant">Receive direct work requests from local farmers.</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary-container">check_circle</span>
+<span class="text-body-lg text-on-surface-variant">Manage your availability and schedule easily.</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary-container">check_circle</span>
+<span class="text-body-lg text-on-surface-variant">Track your earnings and job history.</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary-container">check_circle</span>
+<span class="text-body-lg text-on-surface-variant">Option to operate machinery for higher pay.</span>
+</li>
+</ul>
+</div>
+</div>
+</section>
+<!-- 12. Ready to Get Started? -->
+<section class="py-xl bg-primary-container text-on-primary text-center">
+<div class="max-w-container-max mx-auto px-md">
+<h2 class="font-headline-lg text-headline-lg mb-sm">Ready to Get Started?</h2>
+<p class="font-body-lg text-on-primary-container mb-8 max-w-2xl mx-auto">Join our growing community and transform the way you manage your agricultural needs.</p>
+<div class="flex flex-col sm:flex-row justify-center gap-md">
+<button class="bg-surface text-primary-container font-label-md px-8 py-4 rounded-xl hover:bg-surface-container transition-colors shadow-sm font-bold text-lg">I'm a Farmer</button>
+<button class="bg-surface-tint text-on-primary border border-on-primary/30 font-label-md px-8 py-4 rounded-xl hover:bg-primary transition-colors shadow-sm font-bold text-lg">I'm a Labourer</button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-highest dark:bg-surface-container-highest full-width bottom-0 opacity-90 hover:opacity-100 transition-opacity border-t border-outline-variant mt-auto">
+<div class="w-full px-md py-lg grid grid-cols-1 md:grid-cols-4 gap-gutter max-w-container-max mx-auto">
+<div class="flex flex-col gap-sm">
+<span class="text-title-lg font-title-lg text-primary font-bold tracking-tight">Kisan Sahayak</span>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Empowering Rural Growth through digital innovation.</p>
+</div>
+<div class="flex flex-col gap-sm">
+<h4 class="font-label-md text-label-md text-on-surface font-semibold uppercase tracking-wider">Platform</h4>
+<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface transition-colors" href="#">Find Labour</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface transition-colors" href="#">Machinery</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface transition-colors" href="#">Store</a>
+</div>
+<div class="flex flex-col gap-sm">
+<h4 class="font-label-md text-label-md text-on-surface font-semibold uppercase tracking-wider">Legal</h4>
+<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface transition-colors" href="#">Privacy Policy</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface transition-colors" href="#">Terms of Service</a>
+</div>
+<div class="flex flex-col gap-sm">
+<h4 class="font-label-md text-label-md text-on-surface font-semibold uppercase tracking-wider">Support</h4>
+<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface transition-colors" href="#">Help Center</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface transition-colors" href="#">Contact Us</a>
+</div>
+</div>
+<div class="w-full px-md py-sm border-t border-outline-variant max-w-container-max mx-auto flex justify-between items-center">
+<p class="font-label-sm text-label-sm text-on-surface-variant">© 2024 Kisan Sahayak. Empowering Rural Growth.</p>
+<div class="flex gap-sm">
+<a aria-label="Facebook" class="text-on-surface-variant hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined text-[20px]" data-icon="language">language</span>
+</a>
+</div>
+</div>
+</footer>
+</body></html>
